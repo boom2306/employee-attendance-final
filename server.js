@@ -2,6 +2,7 @@ const { app } = require('./index.js');
 const dbAccess = require('./db.js');
 
 const db = dbAccess.db;
+const PORT = process.env.PORT || 3000;
 
 // Initialize database tables
 db.serialize(() => {

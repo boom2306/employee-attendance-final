@@ -1,4 +1,4 @@
-const BASE_URL = window.location.origin + '/api/v1';
+const BASE_URL = 'http://192.168.1.100:3000/api/v1';
 
 let employeeToken = localStorage.getItem('employeeToken') || '';
 document.getElementById('empToken').value = employeeToken;

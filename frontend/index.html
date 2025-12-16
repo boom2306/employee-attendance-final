@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Employee Attendance System</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- Admin Dashboard Button -->
+  <div style="position: absolute; top: 10px; right: 10px;">
+    <button type="button" onclick="goToAdmin()">Admin Dashboard</button>
+  </div>
+
+  <p id="messageBox"></p>
+
+  <!-- ================= EMPLOYEE AUTH ================= -->
+  <div class="box">
+    <h2>Employee Authentication</h2>
+
+    <input id="empRegEmail" type="email" placeholder="Employee Email" />
+    <input id="empRegPass" type="password" placeholder="Employee Password" />
+    <button type="button" id="empRegisterBtn">Register Employee</button>
+
+    <br /><br />
+
+    <input id="empLoginEmail" type="email" placeholder="Employee Email" />
+    <input id="empLoginPass" type="password" placeholder="Employee Password" />
+    <button type="button" id="empLoginBtn">Login Employee</button>
+
+    <br /><br />
+
+    <button type="button" id="empLogoutBtn">Logout Employee</button>
+
+    <p>Employee Token:</p>
+    <textarea id="empToken" readonly></textarea>
+  </div>
+
+  <!-- ================= EMPLOYEE ATTENDANCE ================= -->
+  <div class="box">
+    <h2>Employee Attendance</h2>
+
+    <button type="button" id="clockInBtn">Clock In</button>
+    <button type="button" id="clockOutBtn">Clock Out</button>
+    <button type="button" id="myAttendanceBtn">View My Attendance</button>
+
+    <pre id="myAttendanceOutput"></pre>
+  </div>
+
+  <!-- ================= SCRIPT ================= -->
+  <script src="app.js"></script>
+
+  <script>
+    function goToAdmin() {
+      window.location.href = 'admin.html';
+    }
+  </script>
+
+</body>
+</html>

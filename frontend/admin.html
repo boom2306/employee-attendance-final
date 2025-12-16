@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Admin Dashboard</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- Back button -->
+  <div style="position: absolute; top: 10px; right: 10px;">
+    <button type="button" onclick="goBack()">Back</button>
+  </div>
+
+
+  <!-- ADMIN AUTH -->
+  <div class="box">
+    <h2>Admin Authentication</h2>
+
+<!--
+    <input id="adminRegEmail" type="email" placeholder="Admin Email" />
+    <input id="adminRegPass" type="password" placeholder="Admin Password" />
+    <button type="button" id="adminRegisterBtn">Register Admin</button> 
+-->
+
+    <br /><br />
+
+    <input id="adminLoginEmail" type="email" placeholder="Admin Email" />
+    <input id="adminLoginPass" type="password" placeholder="Admin Password" />
+    <button type="button" id="adminLoginBtn">Login Admin</button>
+
+    <br /><br />
+
+    <button type="button" id="adminLogoutBtn">Logout Admin</button>
+<!--
+    <p>Admin Token:</p>
+    <textarea id="adminToken" readonly></textarea>
+    -->
+  </div>
+
+  <!-- ADMIN ATTENDANCE -->
+  <div class="box">
+    <h2>Admin Attendance</h2>
+
+    <button type="button" id="allAttendanceBtn">View All Attendance</button>
+
+    <pre id="allAttendanceOutput"></pre>
+  </div>
+
+  <script src="admin.js"></script>
+
+  <script>
+    function goBack() {
+      window.location.href = 'index.html';
+    }
+  </script>
+
+</body>
+</html>

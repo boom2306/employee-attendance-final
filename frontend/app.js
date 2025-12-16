@@ -1,4 +1,4 @@
-const BASE_URL = 'http://172.20.10.2:3000/api/v1';
+const BASE_URL = 'https://employee-attendance-rawhy.onrender.com/api/v1';
 
 let employeeToken = localStorage.getItem('employeeToken') || '';
 document.getElementById('empToken').value = employeeToken;

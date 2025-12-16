@@ -28,4 +28,4 @@ A Node.js/Express application for managing employee attendance with clock-in/clo
 - `GET /api/v1/attendance` - View all attendance (admin only)
 
 ## Running the Application
-The application runs on port 3000 and serves both the API and static frontend.
+This application is currently being hosted on render. (https://employee-attendance-rawhy.onrender.com)
